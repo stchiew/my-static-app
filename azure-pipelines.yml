@@ -25,7 +25,9 @@ steps:
   displayName: 'Run a multi-line script'
 
 - task: AzureStaticWebApp@0
+  displayName: Deploy to static web app
   inputs:
     app_location: '/'
     skip_api_build: true
+    output_location: "wwwroot"
     azure_static_web_apps_api_token: $(deployment_token_static)
