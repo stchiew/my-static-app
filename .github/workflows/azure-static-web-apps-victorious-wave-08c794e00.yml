@@ -2,9 +2,13 @@ name: Azure Static Web Apps CI/CD
 
 on:
   push:
+    paths-ignore:
+      - '**/**.yml'
     branches:
       - main
   pull_request:
+    paths-ignore:
+      - '**/**.yml'
     types: [opened, synchronize, reopened, closed]
     branches:
       - main
