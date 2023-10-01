@@ -30,7 +30,8 @@ steps:
 - task: AzureStaticWebApp@0
   displayName: Deploy to static web app
   inputs:
-    app_location: '/'
+    app_location: 'src'
     skip_api_build: true
-    output_location: "wwwroot"
+    output_location: 'public'
+    wd: '$(System.DefaultWorkingDirectory)/my-static-app'
     azure_static_web_apps_api_token: $(deployment_token_static)
