@@ -16,7 +16,7 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  - group: Deploy group
+  - group: Deployment group
 
 steps:
 - script: echo Hello, world!
