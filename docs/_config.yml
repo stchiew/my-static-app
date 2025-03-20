@@ -57,7 +57,7 @@ plugins:
 
 author:
   name: "ST Chiew"
-  avatar: "/assets/images/onepanda.png"
+  avatar: "/assets/images/onepanda.PNG"
   bio: "Me Panda."
   links:
     - label: "Website"
